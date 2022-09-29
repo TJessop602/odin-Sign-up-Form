@@ -70,18 +70,37 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .left{
-    flex: 1 1 33rem;
+    display:flex;
+    position: relative;
+    flex: 0 0 30%;
     background-color: green;
     text-align: center;
     font-size: 56px;
 }
 
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit:none;
+}    
+
+.title{
+    position: absolute;
+    background-color:rgba(200,200,200,0.7);
+    
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .right{
-    flex: 2 1 66rem;
+    flex: 0 0 70%;
     background-color: white;
 }
 
