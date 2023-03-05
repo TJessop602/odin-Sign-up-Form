@@ -105,13 +105,21 @@ img{
     background-color: white;
 }
 
-.right>*{
+.right>.upper{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.right>.upper>.content{
     margin-left: 100px;
     margin-right: 100px;
     padding:10px;
+    font-size: 22px;
 }
 
-.right>p{
+.right>.lower{
+    margin-left: 0px;
+    margin-right: 100px;
+    padding:10px;
     font-size: 22px;
 }
 
@@ -141,4 +149,12 @@ input{
     border-color: rgb(200,200,200);
     width: 13rem;
     height: 1.5rem;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  
 }
